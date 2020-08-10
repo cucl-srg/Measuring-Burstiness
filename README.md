@@ -1,4 +1,14 @@
-This directory contains all the scripts used for the analysis of bandwidth.
+# Measuring-Burstiness
+Measuring Burstiness in Data Center Applications, Buffer Sizing Workshop 2019
+
+# Citation
+Jackson Woodruff, Andrew W Moore, and Noa Zilberman. 2019. Measuring Burstiness in Data Center Applications. In Proceedings of the 2019 Workshop on Buffer Sizing (BS ’19). Article 5, 1–6. DOI:https://doi.org/10.1145/3375235.3375240
+
+# Dataset 
+The dataset used in this work is available at https://www.cl.cam.ac.uk/research/srg/netos/projects/latency/buffer2019/
+
+# Setup
+This directory contains all the scripts used for the analysis of bandwidth in the paper.
 
 To use (requires access to all repos):
 1. Put this project in /root/jcw78/scripts
@@ -13,11 +23,13 @@ To use (requires access to all repos):
 	- NRG-dev: APIs for the NRG.
 	- NetFPGA-SUME-live + OSTN-SUME-line: 
 
+
 ALTERNATIVE (repos already cloned):
 1. Unzip environment.tar into /root/jcw78
 2. Then follow the normal setup :)
 
-After that is done, 
+## Folder structure
+
 	- setup/: This contains scripts to set up machines.  Some scripts may need modification for your system: those are explained clearly in the README there.  Start here, or do steps 1-5 above to setup your  machines.
 	- apps: This contains scripts used to run and capture from the benchmark suite.  If you are looking to run a capture, start here.
 	- evaluation: This contains scripted tests to analyze the correctness, accuracy and precision of a capture setup.  If you are looking to analyze an experimental setup, start here.
@@ -33,7 +45,7 @@ After that is done,
 	- general:  This contains bash libraries loaded by other scripts.
 	- HPT\_test/: This contains scripts used to test the HPT card.
 	Some scripts may need to be run after every reboot.
-	- 
+	
 
-#Configuration
+## Configuration
 Every directory has a `config` file and a `README`. You should start at the README, then edit the config file as appropriate.
